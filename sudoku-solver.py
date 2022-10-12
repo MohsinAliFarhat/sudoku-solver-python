@@ -1,10 +1,10 @@
   import math
   class Solution:
       def solveSudoku(self, board) -> None:
-
           n = len(board)
           self.backtrack(board,0, 0, n)
           print(board)
+          
       def backtrack(self,board,row, col, n):
           if col == n:
               row = row+1
